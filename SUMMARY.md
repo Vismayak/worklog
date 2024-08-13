@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Worklog](README.md)
+* [Visu's Worklog](README.md)
