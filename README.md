@@ -14,7 +14,6 @@ layout:
 ---
 
 # Worklog
-
-### Daily Work Updates on what I have done
+<p> Daily Work Updates on what I have done </p>
 
 ### Aug 13, 2024
