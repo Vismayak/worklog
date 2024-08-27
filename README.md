@@ -7,13 +7,13 @@ icon: display-code
 
 ## Aug 26, 2025
 
-## GLTG
+### GLTG
 * Trends Dashboard Sidebar
   * Trends dashboard 
     * Dynamically loads the GeoJson files, a hack I had to use was to use the fetch API to get the geojson data, the webpack config currently was loading them as URLS which was needed for the vector layer creation on the map
     * Interaction between sidebar and map left
 
-* Geostreams3 
+### Geostreams3 
   * The authentication app now has another API to generate API keys for logged in users, it was done using the secrets library of python, it is currently stored plainly in the database but will spend time to encrypt and store it if possible, the encryption key can be stored in settings
 
 ## Aug 21, 2024 - Aug 22, 2024
