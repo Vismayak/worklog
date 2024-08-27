@@ -5,7 +5,28 @@ icon: display-code
 
 # Visu's Worklog
 
-## Aug 16, 2024
+## Aug 26, 2025
+
+## GLTG
+* Trends Dashboard Sidebar
+  * Trends dashboard 
+    * Dynamically loads the GeoJson files, a hack I had to use was to use the fetch API to get the geojson data, the webpack config currently was loading them as URLS which was needed for the vector layer creation on the map
+    * Interaction between sidebar and map left
+
+* Geostreams3 
+  * The authentication app now has another API to generate API keys for logged in users, it was done using the secrets library of python, it is currently stored plainly in the database but will spend time to encrypt and store it if possible, the encryption key can be stored in settings
+
+## Aug 21, 2024 - Aug 22, 2024
+
+### HDC
+* Segment Anything Extractor
+  * Bug in Image annotator was caught, image coordinates were in SVG space, needed to be converted to image
+  * Bug was fixed and minor changes to extractor, the segment anything extractor is working perfectly
+
+### Geostreams
+
+
+## Aug 20, 2024
 
 ### Geostreams3
 * Since there was no radiant available, I put all my focus on Geostreams3, corrected the basic front end UI to login, signup and  get the token using React Contexts
