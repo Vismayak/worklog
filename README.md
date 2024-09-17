@@ -5,13 +5,42 @@ icon: display-code
 
 # Visu's Worklog
 
-## Aug 26, 2025
+## September 17 
+## GLTG 
+* Draft of Sidebar is done
+
+## HDC
+* Learning to use Ray Core and Ray Train
+* Get to setting up Ray Cluster soon
+
+
+
+## Aug 27, 2024 - Aug 28, 2024
+
+## GLTG 
+* Trends Dashboard Sidebar
+  * Trends Table - The table now is available for all parameters, the only thing left is the interaction between map and table. 
+
+* Geostreams
+ * Hash and store the API keys for user. Still need to provide username
+ * Debugging geostream scripts with Max
+
+
+## HDC
+* Screen recorded the Segment Anything extractor 
+
+## Reading
+  * Reading on Kubernetes 
+
+## Misc
+* Complete Cybersecurity work
+
+
+## Aug 26, 2024
 
 ### GLTG
 * Trends Dashboard Sidebar
-  * Trends dashboard 
-    * Dynamically loads the GeoJson files, a hack I had to use was to use the fetch API to get the geojson data, the webpack config currently was loading them as URLS which was needed for the vector layer creation on the map
-    * Interaction between sidebar and map left
+  * Trends Table - Dynamically loads the GeoJson files, a hack I had to use was to use the fetch API to get the geojson data, the webpack config currently was loading them as URLS which was needed for the vector layer creation on the map
 
 ### Geostreams3 
   * The authentication app now has another API to generate API keys for logged in users, it was done using the secrets library of python, it is currently stored plainly in the database but will spend time to encrypt and store it if possible, the encryption key can be stored in settings
@@ -23,7 +52,8 @@ icon: display-code
   * Bug in Image annotator was caught, image coordinates were in SVG space, needed to be converted to image
   * Bug was fixed and minor changes to extractor, the segment anything extractor is working perfectly
 
-### Geostreams
+### GLTG
+* Basic layout of Trend Tables created
 
 
 ## Aug 20, 2024
