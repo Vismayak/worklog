@@ -5,6 +5,14 @@ icon: display-code
 
 # Visu's Worklog
 
+## September 19
+# HDC
+- Running Object Detection Notebook sucessfully on NCSA GPU (Small changes such as loading data locally with curl instead of bucket download needed to be done)
+- Running Detectron 2 on NCSA GPU VM
+  Notes:
+  - Needed to install g++ , [used](https://stackoverflow.com/a/69485927) `conda install -c conda-forge cxx-compiler`
+
+
 ## September 17 
 ## GLTG 
 * Draft of Sidebar is done
