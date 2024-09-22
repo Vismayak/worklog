@@ -5,12 +5,31 @@ icon: display-code
 
 # Visu's Worklog
 
+
+## September 22nd
+## HDC
+- Second time trying to git clone and we should suggest Amal to change the repo to a git LFS system
+- Using VS server to run jupyter notebooks in sd-gpu, the drivers it installare much more lightweight and I even get github copilot
+- Ray dataset with detectron not going accord to plan, issues coming up. It is slower than running normally
+- I have an implementation using basic ray functions, the time benchmarks suggest not using Ray is faster but this could change in a multi-gpu system
+
+## Geostreams3
+
 ## September 19
-# HDC
+## HDC
 - Running Object Detection Notebook sucessfully on NCSA GPU (Small changes such as loading data locally with curl instead of bucket download needed to be done)
 - Running Detectron 2 on NCSA GPU VM
   Notes:
   - Needed to install g++ , [used](https://stackoverflow.com/a/69485927) `conda install -c conda-forge cxx-compiler`
+  - Created notebook to download specifc parts of COCO dataset. This was an useful [reference](https://pypi.org/project/CocoDataset/)
+- Running vit-sandbox on NCSA GPU
+  Notes:
+  - There is a lot of data, so I cloned it to taiga and probably use symlinks
+  - The thing is so large it is getting stuck
+  - Slight chance, I killed the sd-gpu machine
+
+  
+
 
 
 ## September 17 
