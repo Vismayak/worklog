@@ -5,18 +5,31 @@ icon: display-code
 
 # Visu's Worklog
 
+## Project Boards
+
+- [*Geostream Projects*](https://github.com/orgs/geostreams/projects/7)
+- [*IBM HDC*](https://github.com/orgs/clowder-framework/projects/3)
+
+## September 23rd
+### GLTG
+- Created different tasks for GLTG Trends Dashboard
+- Set up meeting with Laura tomorrow to discuss the Illinois Dashboard project that is starting goon
+- 
 
 ## September 22nd
-## HDC
+### HDC
 - Second time trying to git clone and we should suggest Amal to change the repo to a git LFS system
 - Using VS server to run jupyter notebooks in sd-gpu, the drivers it installare much more lightweight and I even get github copilot
 - Ray dataset with detectron not going accord to plan, issues coming up. It is slower than running normally
 - I have an implementation using basic ray functions, the time benchmarks suggest not using Ray is faster but this could change in a multi-gpu system
 
-## Geostreams3
+### Geostreams3
+- Create PR for keycloak setup using realm settings (includes client settings as well)
+- Created new issues to tackle in geostreams3 such as Keycloak sendign email
+- Meeting with Rashmil on Friday to discuss
 
 ## September 19
-## HDC
+### HDC
 - Running Object Detection Notebook sucessfully on NCSA GPU (Small changes such as loading data locally with curl instead of bucket download needed to be done)
 - Running Detectron 2 on NCSA GPU VM
   Notes:
