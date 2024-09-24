@@ -10,6 +10,22 @@ icon: display-code
 - [**Geostream Projects**](https://github.com/orgs/geostreams/projects/7)
 - [**IBM HDC**](https://github.com/orgs/clowder-framework/projects/3)
 
+## September 24th
+
+**Illinois Dashboard**
+- Had meeting with Laura and then Jong, about project. Main takeaways:
+  - Project deadline October 2025, with development to start early
+  - Single webpage app
+  - List of stuff to do:
+    - [] Create a Github Project to track the tasks
+    - [] Create a private repository
+    - [] Create headers, sidebars and a basic layout once wireframes are received
+
+**GLTG**
+- State portal data has been provided. Task to add and wait for narrative 
+- Trend narrative to be provided in 2 weeks
+
+
 ## September 23rd
 **GLTG**
 - Created different tasks for GLTG Trends Dashboard
