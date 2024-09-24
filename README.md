@@ -9,6 +9,7 @@ icon: display-code
 
 - [**Geostream Projects**](https://github.com/orgs/geostreams/projects/7)
 - [**IBM HDC**](https://github.com/orgs/clowder-framework/projects/3)
+- [**Illinois NRS Dashboard**](https://github.com/orgs/geostreams/projects/9)
 
 ## September 24th
 
@@ -17,14 +18,16 @@ icon: display-code
   - Project deadline October 2025, with development to start early
   - Single webpage app
   - List of stuff to do:
-    - [ ] Create a Github Project to track the tasks
-    - [ ] Create a private repository
+    - [X] Create a [Github Project]((https://github.com/orgs/geostreams/projects/9)) to track the tasks
+    - [X] Create a [private repository](https://github.com/geostreams/illinois-nrs-dashboard)
+    - [ ] Go through report to get an idea of the required chart library
     - [ ] Create headers, sidebars and a basic layout once wireframes are received
+
 
 **GLTG**
 - State portal data has been provided. Task to add and wait for narrative 
 - Trend narrative to be provided in 2 weeks
-
+ 
 
 ## September 23rd
 **GLTG**
