@@ -13,6 +13,7 @@ icon: display-code
 ## September 23rd
 **GLTG**
 - Created different tasks for GLTG Trends Dashboard
+- Worked on the [GLTG Dashbard changes](https://github.com/geostreams/gltg/issues/115) suggested by Alejandra
 
 **Illinois Dashboard**
 - Set up meeting with Laura tomorrow to discuss the Illinois Dashboard project that is starting early October
