@@ -13,7 +13,10 @@ icon: display-code
 ## September 23rd
 **GLTG**
 - Created different tasks for GLTG Trends Dashboard
+
+**Illinois Dashboard**
 - Set up meeting with Laura tomorrow to discuss the Illinois Dashboard project that is starting early October
+- Created [Google Doc](https://docs.google.com/document/d/1dUPDMBBk3ZLDZn3wwInLj3j2IhqzzuRCeKauPPd5uC4/) to track notes and plans for the dashboard
 
 **HDC**
 - Going through [Tutorial](https://docs.ray.io/en/latest/cluster/getting-started.html) on Kuberay to prepare on using MCAD for PDG cluster
