@@ -17,9 +17,9 @@ icon: display-code
   - Project deadline October 2025, with development to start early
   - Single webpage app
   - List of stuff to do:
-    - [] Create a Github Project to track the tasks
-    - [] Create a private repository
-    - [] Create headers, sidebars and a basic layout once wireframes are received
+    - [ ] Create a Github Project to track the tasks
+    - [ ] Create a private repository
+    - [ ] Create headers, sidebars and a basic layout once wireframes are received
 
 **GLTG**
 - State portal data has been provided. Task to add and wait for narrative 
