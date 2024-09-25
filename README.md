@@ -11,6 +11,22 @@ icon: display-code
 - [**IBM HDC**](https://github.com/orgs/clowder-framework/projects/3)
 - [**Illinois NRS Dashboard**](https://github.com/orgs/geostreams/projects/9)
 
+
+## September 25th
+**HDC**
+- Going through [Tutorial](https://docs.ray.io/en/latest/cluster/getting-started.html) on Kuberay to prepare on using MCAD for PDG cluster
+
+- *Note - Useful [instructions](https://docs.ray.io/en/latest/cluster/kubernetes/k8s-ecosystem/prometheus-grafana.html#kuberay-prometheus-grafana) on adding Prometheus or Grafana to Kuberay*
+
+- Trying to run the hugging face extractor on KubeRay. Set up PDG cluster on my computer.
+  - Ran into memory issues when running the extractor, super close to getting it to work
+
+**Illinois Dashboard**
+- Compiled short list of charts from the report that might be needed for the dashboard in the [google doc](https://docs.google.com/document/d/1dUPDMBBk3ZLDZn3wwInLj3j2IhqzzuRCeKauPPd5uC4/edit)
+
+**GLTG**
+- Completed the [GLTG Dashbard changes](https://github.com/geostreams/gltg/issues/115) suggested by Alejandra
+
 ## September 24th
 
 **Illinois Dashboard**
@@ -25,8 +41,11 @@ icon: display-code
 
 
 **GLTG**
-- State portal data has been provided. Task to add and wait for narrative 
-- Trend narrative to be provided in 2 weeks
+- State portal data sources has been provided in [doc](https://docs.google.com/document/d/1e-60FORWajNJpBh2N9ErxGo9ynQVPXHXIWBugWqCXqI/edit), some changes still needed but loaded the ones that are available
+- Note - Trend narrative to be provided in 2 weeks
+
+**HDC**
+- Scheduled meeting with AMAL to discuss the ViT-Sandbox on Friday
  
 
 ## September 23rd
