@@ -12,6 +12,31 @@ icon: display-code
 - [**Illinois NRS Dashboard**](https://github.com/orgs/geostreams/projects/9)
 
 
+## September 27th
+**HDC**
+- I finally managed to get the vit_Repository into the GPU VM. I had to git clone to my local and scp to the taiga. I also had to move my conda package installation folder `.conda` to the taiga as the system is running out of space. To do it use `conda config --add pkgs_dirs /new/path/to/store/conda_pkgs`. 
+
+**Geostreams3**
+- Meetings with Rashmil and Max to discuss the Geostreams3 project. Discussed the sending of emails and how to create an API that takes in a circle or polygon and returns the sensors within that area. Created [issue](https://github.com/geostreams/geostreams3/issues/75)
+
+
+**Illinois Dashboard**
+
+- 
+
+
+
+**Misc**
+- Opening other pages in my gitbook for a more comprehensive report on project tasks.  
+
+## September 26th
+**GLTG**
+-  Trend Dashboard - Improvements to UI expereience, re render of table causes loss of User's selection. Working on a fix for this. Merged branch to the new trend dashboard PR
+
+**HDC**
+- Reading on more examples of KubeRay while trying to run the hugging face extractor on KubeRay. 
+- RayServe and RayJob seem to be the standard ways to serve and train. Rare examples of using RayCluster by itself. The [one](https://docs.ray.io/en/latest/cluster/kubernetes/user-guides/rayserve-dev-doc.html) is see is to set one up to develop a RayServe script.
+
 ## September 25th
 **HDC**
 - Going through [Tutorial](https://docs.ray.io/en/latest/cluster/getting-started.html) on Kuberay to prepare on using MCAD for PDG cluster
