@@ -19,12 +19,12 @@ icon: display-code
 **Geostreams3**
 - Meetings with Rashmil and Max to discuss the Geostreams3 project. Discussed the sending of emails and how to create an API that takes in a circle or polygon and returns the sensors within that area. Created [issue](https://github.com/geostreams/geostreams3/issues/75)
 
+- Create PR for the get sensors in Polygon API 
+
 
 **Illinois Dashboard**
 
-- 
-
-
+- Experiment with [streamlit](https://streamlit.io/) to see if it can be used for the Illinois Dashboard.
 
 **Misc**
 - Opening other pages in my gitbook for a more comprehensive report on project tasks.  
