@@ -38,8 +38,7 @@ To display data, we can use either magic commands or the `st.write()` function. 
 It has support for dataframes, charts and maps. It also has widgets for user input.
 The thing is there is a lack of flexibility in the layout but it is amazing for quick charts and stuff. I think it is a great tool for Clowder where we can provide support for data from clowder right in the dashboard. It has features like caching to perform when loading data.
 
-![alt text](image.png)
-
+![alt text](assets/images/IL-NRS/image.png)
 
 It has support for custom componenets, so though there is no integration with Openlayers, we can create a custom component to display Openlayers maps. 
 
@@ -52,5 +51,4 @@ Overall the dashboard is very easy to use and is a great tool for creating dashb
 I was able to create the following dashboard through this [tutorial](https://docs.streamlit.io/get-started/tutorials/create-an-app) with just 36 lines of code. It includes loading data, optionally displaying data, creating a chart and a map. The data is loaded from an online source and cached for performance.
 
 
-
-![alt text](image-1.png)
+![alt text](assets/images/IL-NRS/image-1.png)

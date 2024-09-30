@@ -17,7 +17,17 @@ icon: display-code
 
 **Illinois NRS Dashboard**
 
-- Have first meeting with Laura and Joan to discuss initial wire frames, go through how we are tracking issues and direction, keep notes to discuss on Wednesday Geostreams meeting
+- Had first meeting with Laura and Joan to discuss the Illinois Dashboard Project. Meeting went well, following takeaways:
+  -  Joan showed us a timeline of the project and the different phases that are planned
+  - There is a lot of similarites to the old Green Infrastructure project, so going through the codebase could be helpful
+  -  The project so far has 4 dashboards but it is a tentative number and can be changed
+  - A lot of the data in the report is statewide but dashboard might require us to focus by county, practices and HUC
+  - There is a number of spreadsheets from different sources which should be normalized to a single database and this format is already being worked on by Joan
+  - A number of scripts would required for conversions such as lat long to HUC, etc 
+  - I pushed for a couple of wireframes so we can get started with the layout of the dashboard and compare different navigation options
+  - The design files might have some useful styling information that can be used for the dashboard
+  - Going to have a followup huddle with Laura to clarify some of the points and get started on the project
+
 
 **HDC**
 
@@ -34,6 +44,7 @@ icon: display-code
 **Misc**
 
 - Send out email confirming travel plans to India
+- Experiment with folium to visualize polygon data on a map
 
 
 ## September 27th
