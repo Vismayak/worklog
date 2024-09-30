@@ -12,6 +12,30 @@ icon: display-code
 - [**Illinois NRS Dashboard**](https://github.com/orgs/geostreams/projects/9)
 
 
+## September 28th
+
+
+**Illinois NRS Dashboard**
+
+- Have first meeting with Laura and Joan to discuss initial wire frames, go through how we are tracking issues and direction, keep notes to discuss on Wednesday Geostreams meeting
+
+**HDC**
+
+- Run multiple Kuberay workflows on the PDG cluster and gather results
+
+- Run the code Amal provided on the NCSA GPU VM
+
+- Start compiling report/presentation for Wednesday Meeting
+
+**Geostreams3**
+
+- Start connecting to the smartfarm dashboard and see the progress I have so far and what is missing
+
+**Misc**
+
+- Send out email confirming travel plans to India
+
+
 ## September 27th
 **HDC**
 - I finally managed to get the vit_Repository into the GPU VM. I had to git clone to my local and scp to the taiga. I also had to move my conda package installation folder `.conda` to the taiga as the system is running out of space. To do it use `conda config --add pkgs_dirs /new/path/to/store/conda_pkgs`. 
@@ -19,7 +43,7 @@ icon: display-code
 **Geostreams3**
 - Meetings with Rashmil and Max to discuss the Geostreams3 project. Discussed the sending of emails and how to create an API that takes in a circle or polygon and returns the sensors within that area. Created [issue](https://github.com/geostreams/geostreams3/issues/75)
 
-- Create PR for the get sensors in Polygon API 
+- Create [PR](https://github.com/geostreams/geostreams3/pull/76) for the get sensors in Polygon API 
 
 
 **Illinois Dashboard**

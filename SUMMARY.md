@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Visu's Worklog](worklog.md)
+* [Visu's Worklog](README.md)
 
 * Blogs
   * [IBM-HDC](blogs/IBM-HDC.md)
