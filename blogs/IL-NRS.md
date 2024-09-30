@@ -36,7 +36,7 @@ Streamlit is a reactive framework. When the user interacts with the app, the app
 To display data, we can use either magic commands or the `st.write()` function. The `st.write()` function is a generic function that can display any data type. 
 
 It has support for dataframes, charts and maps. It also has widgets for user input.
-The thing is there is a lack of flexibility in the layout but it is amazing for quick charts and stuff. I think it is a great tool for Clowder where we can provide support for data from clowder right in the dashboard. It hasfeatures like cachin to perform when loading data.
+The thing is there is a lack of flexibility in the layout but it is amazing for quick charts and stuff. I think it is a great tool for Clowder where we can provide support for data from clowder right in the dashboard. It has features like caching to perform when loading data.
 
 ![alt text](image.png)
 
@@ -49,3 +49,8 @@ Here is an [App model summary](https://docs.streamlit.io/get-started/fundamental
 
 Overall the dashboard is very easy to use and is a great tool for creating dashboards and visualizations. It is quick and easy to use.
 
+I was able to create the following dashboard through this [tutorial](https://docs.streamlit.io/get-started/tutorials/create-an-app) with just 36 lines of code. It includes loading data, optionally displaying data, creating a chart and a map. The data is loaded from an online source and cached for performance.
+
+
+
+![alt text](image-1.png)
