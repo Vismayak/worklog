@@ -12,7 +12,18 @@ icon: display-code
 - [**Illinois NRS Dashboard**](https://github.com/orgs/geostreams/projects/9)
 
 
-## September 28th
+## October 1st 
+
+**HDC** 
+
+- Debugging script while running on K8 Cluster
+
+**Misc**
+
+- Attended round table talk on the new hip replacement for pip called [uv](https://astral.sh/blog/uv)
+
+
+## September 30th
 
 
 **Illinois NRS Dashboard**
@@ -31,20 +42,15 @@ icon: display-code
 
 **HDC**
 
-- Run multiple Kuberay workflows on the PDG cluster and gather results
+- Run Kuberay workflows on the PDG cluster and gather results
 
-- Run the code Amal provided on the NCSA GPU VM
+- Write scripy for finetuning bert model on yelp classifican using TorchTrainer for K8 Ray Cluster
 
-- Start compiling report/presentation for Wednesday Meeting
-
-**Geostreams3**
-
-- Start connecting to the smartfarm dashboard and see the progress I have so far and what is missing
 
 **Misc**
 
 - Send out email confirming travel plans to India
-- Experiment with folium to visualize polygon data on a map
+
 
 
 ## September 27th
