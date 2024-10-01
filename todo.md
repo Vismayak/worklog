@@ -7,9 +7,9 @@
 
 - Start compiling report/presentation for Wednesday Meeting
 
-##Geostreams3
+## Geostreams3
 
 - Start connecting to the smartfarm dashboard and see the progress I have so far and what is missing
 
 ## Misc
-- Experiment with folium to visualize polygon data on a map
+- Experiment with folium to visualize polygon data on a map in streamlit
