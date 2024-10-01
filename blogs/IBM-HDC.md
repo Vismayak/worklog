@@ -5,7 +5,7 @@ icon: display-code
 
 # IBM HDC
 
-## KubeRay Experiments
+## KubeRay Experiments [WIP]
 
 Add experience running RayCluster job on Luigi's hugging face code
 
@@ -24,4 +24,12 @@ Add experience running RayCluster job on Luigi's hugging face code
 - Notes while writing new script:
     - Using the new TorchTrainer API (`Ray 2.7 introduced the newly unified TorchTrainer API, which offers enhanced transparency, flexibility, and simplicity. This API aligns more with standard Hugging Face Transformers scripts, ensuring that you have better control over your native Transformers training code.`). 
     - The script is using Ray Datasets to load the data. 
+    - The script has more specificity when it comes to workers and batch_sizes
     
+- Notes while deploying to K8:
+    - I ran into some issues with enviornment and coding errors
+    - I set max_steps for training which was necessary but that overwrites num_train_epochs
+    `
+    35[36m(RayTrainWorker pid=502, ip=10.42.0.7)[0m max_steps is given, it will override any value given in num_train_epochs
+    36
+    ` 
