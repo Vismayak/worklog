@@ -18,6 +18,10 @@ icon: display-code
 
 - Debugging script while running on K8 Cluster
 
+**Illinois NRS Dashboard**
+
+- Created google doc to keep track of notes for project and had follow up meeting with Laura
+
 **Misc**
 
 - Attended round table talk on the new hip replacement for pip called [uv](https://astral.sh/blog/uv)
