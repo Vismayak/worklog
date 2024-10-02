@@ -5,7 +5,9 @@
 ## HDC
 - Run the code Amal provided on the NCSA GPU VM
 
-- Start compiling report/presentation for Wednesday Meeting
+## GLTG 
+
+- Complete changes specified by Greg
 
 ## Geostreams3
 

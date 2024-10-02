@@ -8,13 +8,21 @@ icon: display-code
 ## Project Boards
 
 - [**Geostream Projects**](https://github.com/orgs/geostreams/projects/7)
-- [**IBM HDC**](https://github.com/orgs/clowder-framework/projects/3)
+- [**IBM HPHC**](https://github.com/orgs/clowder-framework/projects/3)
 - [**Illinois NRS Dashboard**](https://github.com/orgs/geostreams/projects/9)
 
 
+## October 2nd
+
+**HPHC**
+- Compile report for meeting and reorganize project board
+
+**Illinois NRS Dashboard**
+- Research Folium integration with Streamlit for the Illinois Dashboard 
+
 ## October 1st 
 
-**HDC** 
+**HPHC** 
 
 - Debugging script while running on K8 Cluster
 
@@ -46,7 +54,7 @@ icon: display-code
   - Going to have a followup huddle with Laura to clarify some of the points and get started on the project
 
 
-**HDC**
+**HPHC**
 
 - Run Kuberay workflows on the PDG cluster and gather results
 
@@ -60,7 +68,7 @@ icon: display-code
 
 
 ## September 27th
-**HDC**
+**HPHC**
 - I finally managed to get the vit_Repository into the GPU VM. I had to git clone to my local and scp to the taiga. I also had to move my conda package installation folder `.conda` to the taiga as the system is running out of space. To do it use `conda config --add pkgs_dirs /new/path/to/store/conda_pkgs`. 
 
 **Geostreams3**
@@ -80,12 +88,12 @@ icon: display-code
 **GLTG**
 -  Trend Dashboard - Improvements to UI expereience, re render of table causes loss of User's selection. Working on a fix for this. Merged branch to the new trend dashboard PR
 
-**HDC**
+**HPHC**
 - Reading on more examples of KubeRay while trying to run the hugging face extractor on KubeRay. 
 - RayServe and RayJob seem to be the standard ways to serve and train. Rare examples of using RayCluster by itself. The [one](https://docs.ray.io/en/latest/cluster/kubernetes/user-guides/rayserve-dev-doc.html) is see is to set one up to develop a RayServe script.
 
 ## September 25th
-**HDC**
+**HPHC**
 - Going through [Tutorial](https://docs.ray.io/en/latest/cluster/getting-started.html) on Kuberay to prepare on using MCAD for PDG cluster
 
 - *Note - Useful [instructions](https://docs.ray.io/en/latest/cluster/kubernetes/k8s-ecosystem/prometheus-grafana.html#kuberay-prometheus-grafana) on adding Prometheus or Grafana to Kuberay*
@@ -116,7 +124,7 @@ icon: display-code
 - State portal data sources has been provided in [doc](https://docs.google.com/document/d/1e-60FORWajNJpBh2N9ErxGo9ynQVPXHXIWBugWqCXqI/edit), some changes still needed but loaded the ones that are available
 - Note - Trend narrative to be provided in 2 weeks
 
-**HDC**
+**HPHC**
 - Scheduled meeting with AMAL to discuss the ViT-Sandbox on Friday
  
 
@@ -129,12 +137,12 @@ icon: display-code
 - Set up meeting with Laura tomorrow to discuss the Illinois Dashboard project that is starting early October
 - Created [Google Doc](https://docs.google.com/document/d/1dUPDMBBk3ZLDZn3wwInLj3j2IhqzzuRCeKauPPd5uC4/) to track notes and plans for the dashboard
 
-**HDC**
+**HPHC**
 - Going through [Tutorial](https://docs.ray.io/en/latest/cluster/getting-started.html) on Kuberay to prepare on using MCAD for PDG cluster
 
 
 ## September 22nd
-**HDC**
+**HPHC**
 - Second time trying to git clone and we should suggest Amal to change the repo to a git LFS system
 - Using VS server to run jupyter notebooks in sd-gpu, the drivers it installare much more lightweight and I even get github copilot
 - Ray dataset with detectron not going accord to plan, issues coming up. It is slower than running normally
@@ -146,7 +154,7 @@ icon: display-code
 - Meeting with Rashmil on Friday to discuss
 
 ## September 19
-**HDC**
+**HPHC**
 - Running Object Detection Notebook sucessfully on NCSA GPU (Small changes such as loading data locally with curl instead of bucket download needed to be done)
 - Running Detectron 2 on NCSA GPU VM
   Notes:
@@ -166,7 +174,7 @@ icon: display-code
 **GLTG** 
 * Draft of Sidebar is done
 
-**HDC**
+**HPHC**
 * Learning to use Ray Core and Ray Train
 * Get to setting up Ray Cluster soon
 
@@ -183,7 +191,7 @@ icon: display-code
  * Debugging geostream scripts with Max
 
 
-**HDC**
+**HPHC**
 * Screen recorded the Segment Anything extractor 
 
 **Reading**
@@ -204,7 +212,7 @@ icon: display-code
 
 ## Aug 21, 2024 - Aug 22, 2024
 
-**HDC**
+**HPHC**
 * Segment Anything Extractor
   * Bug in Image annotator was caught, image coordinates were in SVG space, needed to be converted to image
   * Bug was fixed and minor changes to extractor, the segment anything extractor is working perfectly
@@ -231,7 +239,7 @@ icon: display-code
 
 ## Aug 14, 2024
 
-**HDC**
+**HPHC**
 
 * Segment Anything Extractor
   * Fixed bug regarding reading parameters
