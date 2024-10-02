@@ -42,18 +42,18 @@ The model was then able to train successfully though the accuracy was low due to
 
 ### Takeaways and next steps:
 
-    - I am currently using a RayJob, but when using extractors we will need to submit jobs to a RayCluster. Luigi has already done something similar on the inference extractor so this should be an easy transition.
+- I am currently using a RayJob, but when using extractors we will need to submit jobs to a RayCluster. Luigi has already done something similar on the inference extractor so this should be an easy transition.
 
-    - Working on this script, I realized we need to give users control over more minute configuration details such as tokenization parameters. It does not need to be resolved now but it is something to keep in mind.
+- Working on this script, I realized we need to give users control over more minute configuration details such as tokenization parameters. It does not need to be resolved now but it is something to keep in mind.
 
-    - The exporting of the best model from this cluster back to Clowder (is probably straightforward using the Clowder API)  
+- The exporting of the best model from this cluster back to Clowder (is probably straightforward using the Clowder API)  
 
-    - Need to see how it handles pod failures
+- Need to see how it handles pod failures
 
-    - How easily can the script be ported to a GPU environment?
+- How easily can the script be ported to a GPU environment?
 
-    - **Autoscaling** - Dynamic resource allocation based on the load for large datasets and models
+- **Autoscaling** - Dynamic resource allocation based on the load for large datasets and models
 
-    - **Model Versioning** - Implementing a versioning system for models to track changes and improvements. Can users pick the best model from the cluster and export it back to Clowder?
+- **Model Versioning** - Implementing a versioning system for models to track changes and improvements. Can users pick the best model from the cluster and export it back to Clowder?
 
 
