@@ -7,46 +7,47 @@ icon: display-code
 
 ## KubeRay Experiments [WIP]
 
-Add experience running RayCluster job on Luigi's hugging face code
+### 1. Introduction to Kubernetes and Ray
+I began by familiarizing myself with Kubernetes and Ray, focusing on running Luigi's Clowder extractors for image classification on a Ray Cluster deployed on Kubernetes. The extractors utilized the Ray Job API to submit tasks to the cluster. After minor adjustments, the extractors ran successfully on the cluster.
 
-- Was running this [KubeRay job example](https://docs.ray.io/en/latest/cluster/kubernetes/examples/mnist-training-example.html#kuberay-mnist-training-example) on PDG cluster and ran into some issues with resource allocation.
+### 2. Shift to Training Jobs on Ray Cluster
+The project shifted towards training models on the Kubernetes cluster. Since our K8s cluster lacks GPUs, I followed CPU-based examples from the Ray documentation. I ran the [KubeRay MNIST training job](https://docs.ray.io/en/latest/cluster/kubernetes/examples/mnist-training-example.html#kuberay-mnist-training-example) on the PDG cluster but encountered resource allocation issues.
 
-- I got an error that the /tmp was overspilling. I looked up online and it said I can mount a volume to the pods so that ray writes to the volume instead. I have done something similar when running on GPU VM. I noticed though Luigi was able to run the cluster in his repo by giving a higher memory allocation in the yaml (increased memory of worker nodes from 4 - 24 GiB) and thought it should be worth the first try instead. I tried that and it worked. I am running the job now and it seems to be going smoothly though slow. I think there are 10 epochs with each epoch taking about 5 minutes. 
+An error occurred due to the `/tmp` directory overspilling. While one solution was to mount a volume to the pods, I first attempted increasing the memory allocation of worker nodes from 4 GiB to 24 GiB, similar to Luigi's setup. This adjustment resolved the issue, and the job ran successfully, albeit slowly, with each epoch taking around 5 minutes (10 epochs in total).
 
 ![alt text](assets/images/IBM-HDC/image.png)
 
 
+### 3. Modifying Existing Training Extractor for Ray Cluster
 
-- Now my next course of action was to modify, the previous extractor I wrote in clowder, which helps train foundation models using Hugging Face transformers for a specific task, into a RayCluster job. 
+I proceeded to modify the previous Clowder extractor, which was designed to train foundation models using Hugging Face transformers, into a RayCluster job. The original job ran on a GPU environment, but the goal is to achieve comparable speeds using KubeRay.
 
-- The job previously ran on a GPU environment but the aim is to get near similar speeds with KubeRay. I will first start with a specific script before moving to using Clowder Extractor to provide the input, output and starting the job
+As a side note, I tried improving the script's performance by using Ray Datasets to load the data. The script also had more specificity regarding workers and batch sizes. However, I encountered issues I was unable to resolve so thought I pivot to a more basic script and come back to this later.
 
-- Notes while writing new script:
-    - Using the new TorchTrainer API (`Ray 2.7 introduced the newly unified TorchTrainer API, which offers enhanced transparency, flexibility, and simplicity. This API aligns more with standard Hugging Face Transformers scripts, ensuring that you have better control over your native Transformers training code.`). 
-    - The script is using Ray Datasets to load the data. 
-    - The script has more specificity when it comes to workers and batch_sizes
+- **Deployment on K8s**: During deployment, I encountered several issues:
+    - Environment and coding errors arose early on.
+    - I got it working with the BERT model but that was taking a long time for just a small sample of the data![alt text](assets/images/IBM-HDC/image-2.png)
+    -**Switch to a Smaller Model:** I switched to using [Tiny-Bert](huggingface.co/prajjwal1/bert-tiny) to reduce the timing issue, however ran into some issues with input dimensions. The fix was to set the `max_length` parameter and use padding to ensure the input tensor lengths matched. The model was then able to train successfully though the accuracy was low due to the small dataset size, the model's simplicity.
+    ![alt text](assets/images/IBM-HDC/image-1.png)
     
-- Notes while deploying to K8:
-    - I ran into some issues with enviornment and coding errors
-    - I set max_steps for training which was necessary but that overwrites num_train_epochs
-    `
-    35[36m(RayTrainWorker pid=502, ip=10.42.0.7)[0m max_steps is given, it will override any value given in num_train_epochs
-    36
-    ` 
+    - **Storage Issues:** I encountered storage issues and realized we needed a shared storage resource for the worker nodes. I created a Taiga mounted PVC and mounted it to the worker nodes, which resolved the issue. 
+    ![alt text](assets/images/IBM-HDC/image-3.png)
 
-    - I switched to a more basic script and it started working but stopped the job and switched to a different bert model cos the original is too large to train
-    - Getting a lot of errorswith tensor length on replacing
 
-    - Fixed an issue with max_length and now working with tiny-bert
 
-    - Had an issue with storage, we needed a shared storage reosurce for the worker nodes, so created a taiga mounted PVC and mounted it to the worker nodes.
+**Takeaways and next steps:**
 
-    - The job is running now! I am glad I switched to tiny bert else we would have been waiting for a long time to catch the afforementioned errors. s
+    - I am currently using a RayJob, but when using extractors we will need to submit jobs to a RayCluster. Luigi has already done something similar on the inference extractor so this should be an easy transition.
 
-    - This is a good start. Here are some of my takeaways:
-        - Right now, I am using a RayJob, when submitting to the cluster, I will need to figure out ways to give users control over the input of the model and tokenizer to prevent the issues I had 
-        - We will need to pick the best model from this cluster and export it back to clowder
-        - See if any troubles running with GPU
-        - Logging with WandB
-        
+    - Working on this script, I realized we need to give users control over more minute configuration details such as tokenization parameters. It does not need to be resolved now but it is something to keep in mind.
+
+    - The exporting of the best model from this cluster back to Clowder (is probably straightforward using the Clowder API)  
+
+    - Need to see how it handles pod failures
+
+    - How easily can the script be ported to a GPU environment?
+
+    - Autoscaling - Dynamic resource allocation based on the load for large datasets and models
+
+    - Model Versioning - Implementing a versioning system for models to track changes and improvements. Can users pick the best model from the cluster and export it back to Clowder?
 
