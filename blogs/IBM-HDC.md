@@ -36,3 +36,17 @@ Add experience running RayCluster job on Luigi's hugging face code
 
     - I switched to a more basic script and it started working but stopped the job and switched to a different bert model cos the original is too large to train
     - Getting a lot of errorswith tensor length on replacing
+
+    - Fixed an issue with max_length and now working with tiny-bert
+
+    - Had an issue with storage, we needed a shared storage reosurce for the worker nodes, so created a taiga mounted PVC and mounted it to the worker nodes.
+
+    - The job is running now! I am glad I switched to tiny bert else we would have been waiting for a long time to catch the afforementioned errors. s
+
+    - This is a good start. Here are some of my takeaways:
+        - Right now, I am using a RayJob, when submitting to the cluster, I will need to figure out ways to give users control over the input of the model and tokenizer to prevent the issues I had 
+        - We will need to pick the best model from this cluster and export it back to clowder
+        - See if any troubles running with GPU
+        - Logging with WandB
+        
+
