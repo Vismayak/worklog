@@ -26,6 +26,8 @@ icon: display-code
 
 - Attended round table talk on the new hip replacement for pip called [uv](https://astral.sh/blog/uv)
 
+- Completed Ethics training 2024
+
 
 ## September 30th
 

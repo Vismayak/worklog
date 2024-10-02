@@ -33,3 +33,6 @@ Add experience running RayCluster job on Luigi's hugging face code
     35[36m(RayTrainWorker pid=502, ip=10.42.0.7)[0m max_steps is given, it will override any value given in num_train_epochs
     36
     ` 
+
+    - I switched to a more basic script and it started working but stopped the job and switched to a different bert model cos the original is too large to train
+    - Getting a lot of errorswith tensor length on replacing
