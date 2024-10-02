@@ -31,7 +31,7 @@ As a side note, I tried improving the script's performance by using Ray Datasets
 
     -**Switch to a Smaller Model:** I switched to using [Tiny-Bert](huggingface.co/prajjwal1/bert-tiny) to reduce the timing issue, however ran into some issues with input dimensions. The fix was to set the `max_length` parameter and use padding to ensure the input tensor lengths matched. 
     
-    - **Storage Issues:** I encountered storage issues and realized we needed a shared storage resource for the worker nodes. I created a Taiga mounted PVC and mounted it to the worker nodes, which resolved the issue. 
+    - **Storage Issues:** I encountered storage issues and realized we needed a shared storage resource for the worker nodes. I created a Taiga mounted PVC and mounted it to the worker nodes, which resolved the issue. Thank god, we shifted to a smaller model or we would have taken a long time to run into this issue.
 
     ![Ray Doc Excerpt](assets/images/IBM-HDC/image-3.png)
 
