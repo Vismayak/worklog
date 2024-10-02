@@ -16,9 +16,22 @@ icon: display-code
 
 **HPHC**
 - Compile report for meeting and reorganize project board
+- Meeting takeaways:
+  - Kueue is a good option for checking out how to queue jobs
+  - A focus on autoscale 
 
-**Illinois NRS Dashboard**
-- Research Folium integration with Streamlit for the Illinois Dashboard 
+**Illinois NRS**
+- Pivoting to using Gatsby as it is a more static site than a dashboard, read up on docs and do some research
+
+**GlTG**
+
+- Improved the aesthetics of the sidebar by opening one of the accordion tables, removed redundant components. 
+
+- Implement Greg's [changes](https://github.com/geostreams/gltg/issues/116g) to the Trend Dashboard
+  - Reran scripts to get new JSON files as there is an unit change
+  - Put a hold on the rest of the changes, as there are some points I need to clear up before tomorrow's meeting
+
+
 
 ## October 1st 
 
