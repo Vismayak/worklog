@@ -1,6 +1,7 @@
 ---
 description: Personal notes for my work at Illinois NRS Dashboard
 icon: display-code
+hidden: true
 ---
 
 # Illinois NRS Dashboard
