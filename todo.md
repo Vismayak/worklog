@@ -14,9 +14,6 @@
 - Start connecting to the smartfarm dashboard and see the progress I have so far and what is missing
 
 ## Misc
-- Experiment with folium to visualize polygon data on a map in streamlit
-
 - Look into:
-    - uv
     - docker-slim
     - [shadcn/ui Charts](https://ui.shadcn.com/charts)

@@ -6,7 +6,12 @@ icon: display-code
 # Tool Notes
 
 
-## [streamlit-folium](https://folium.streamlit.app/) [WIP]
+## [Gatsby](https://www.gatsbyjs.com/)
+
+Gatsby is a React-based open source framework for creating websites. I think there is an use case for the Illinos NRS project because it is a static site generator with options to pull data from markdon and use something called MDX. 
+
+Follow the [tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/). 
+
 
 
 

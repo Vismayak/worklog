@@ -12,6 +12,14 @@ icon: display-code
 - [**Illinois NRS Dashboard**](https://github.com/orgs/geostreams/projects/9)
 
 
+## October 3rd
+
+**GLTG**
+
+Biweekly meeting, went through the new changes for the trend dashboard:
+ - The addition of a new parameter yield. This means a new radio button, with a new chart and changes to script to calculate yield by using area 
+
+
 ## October 2nd
 
 **HPHC**
@@ -20,17 +28,20 @@ icon: display-code
   - Kueue is a good option for checking out how to queue jobs
   - A focus on autoscale 
 
-**Illinois NRS**
-- Pivoting to using Gatsby as it is a more static site than a dashboard, read up on docs and do some research
-
 **GlTG**
 
 - Improved the aesthetics of the sidebar by opening one of the accordion tables, removed redundant components. 
 
-- Implement Greg's [changes](https://github.com/geostreams/gltg/issues/116g) to the Trend Dashboard
+- Implement Greg's [changes](https://github.com/geostreams/gltg/issues/116) to the Trend Dashboard
   - Reran scripts to get new JSON files as there is an unit change
-  - Put a hold on the rest of the changes, as there are some points I need to clear up before tomorrow's meeting
+  - Put a hold on the rest of the changes, as there are some points I need to clear up at tomorrow's meeting
 
+**Misc**
+
+- Used uv to install a sandbox environment for streamlit, it was super fast. Gonna try using everywhere else now
+
+**Illinois NRS**
+- Pivoting to using Gatsby as it is a more static site than a dashboard, read up on docs 
 
 
 ## October 1st 
