@@ -1,6 +1,7 @@
 ---
 description: Daily Work Updates on what I have done
 icon: display-code
+hidden: true
 ---
 
 # My Worklog
