@@ -1,9 +1,46 @@
 ---
-description: Blog updates for my work at Illinois NRS Dashboard
+description: Personal notes for my work at Illinois NRS Dashboard
 icon: display-code
 ---
 
 # Illinois NRS Dashboard
+
+## Meeting with Trevor
+### Overview
+- The project aims to visualize annual average loads for point sources in three categories: Major Municipal, Industrial, and Minor. 
+- The focus is initially on aggregated data, with a goal to display individual point sources later.
+- A basic site is expected to be ready by early 2025 for presentation to the committee, with potential interactive features added based on their feedback.
+
+### Data
+- **Data Availability**:
+  - Data from point sources is available for the baseline year 2011, then 2017-2022.
+  - Major Municipal data includes latitude and longitude, while data for minor facilities is still being finalized.
+  - NonPOTW (non-publicly owned treatment works) data is relevant, with power plants excluded as they source water from nutrient-rich lakes.
+
+- **Key Datasets**:
+  - **MajorMunicipalTotalLoads2011-2022Huc8Huc12**: 
+    - Focus on tabs for 2011-2022 TN (Total Nitrogen) and TP (Total Phosphorus).
+    - Some facilities have closed, leading to zero load values, but historical data remains.
+  
+  - **Final 2022 Minor Municipal+Lagoons_Phosphorus Loads_dashboard**:
+    - Contains data for minor facilities, with monthly load values (highlighted in yellow) that need to be aggregated to annual data.
+    - Minor facilities typically show stable load patterns.
+
+### Data Manipulation
+- The data from the spreadsheets will be used to create spatial dashboards, focusing on visualizing annual average loads.
+- Initial pages will be static, but there are plans to integrate interactive dashboards later. The recommendation is to consider using an interactive chart library from the outset.
+
+### Current Steps
+- Review and refine the mockup document; Trevor finds it a bit wordy, but Laura has provided useful wireframes that offer clarity.
+- Await the finalization of wireframes to explore layout design.
+- Explore dynamic infographic libraics
+- Continue to get more comfortable with Gatsby for front-end development.
+
+
+### Goals 
+- Prepare to present chart prototypes at the next meeting.
+
+
 
 ## Point Source Vector Report Notes
 
@@ -16,7 +53,7 @@ icon: display-code
 -  Great improvements aready done, the goal was 25% reduction by 2025, and the sector has already achieved340% reduction in 2022
 
 **Resource Measures**
-- Only 11 out of 211 municpal facilities sub,itted resource and outreach data, therefore figures significantly underestimate staff, financial, and outreach measure
+- Only 11 out of 211 municpal facilities submitted resource and outreach data, therefore figures significantly underestimate staff, financial, and outreach measure
 - The investment in operations, maintenace, and staff has increased
 
 **Outreach measures** - Continues a lot with even online events during covid

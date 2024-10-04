@@ -12,13 +12,23 @@ icon: display-code
 - [**Illinois NRS Dashboard**](https://github.com/orgs/geostreams/projects/9)
 
 
+## October 4th
+
+**Illinois NRS**
+
+- Meeting with Trevor to discuss the data and goals of the Illinois NRS dashboard. 
+
 ## October 3rd
 
 **GLTG**
 
 Biweekly meeting, went through the new changes for the trend dashboard:
- - The addition of a new parameter yield. This means a new radio button, with a new chart and changes to script to calculate yield by using area 
+ - The addition of a new parameter yield. This means a new radio button, with a new chart and changes to script to calculate yield by using area. Created github task 
 
+**Illinois NRS**
+
+- Gatsby setup, read through the docs and set up a sandbox project to go through it. 
+- Read through Chapter 5 and made notes to have a better understanding for meeting with Trevor about data
 
 ## October 2nd
 
