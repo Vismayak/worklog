@@ -4,6 +4,10 @@ icon: display-code
 hidden: true
 ---
 
+
+[Google Drive Link](https://drive.google.com/drive/u/0/folders/1bvuE5uNpSAmTLUHO_5O-dQbAwHixYaDl)
+
+
 # Illinois NRS Dashboard
 
 ## Meeting with Trevor (October 4th 2024)
@@ -79,3 +83,27 @@ Nutrient Assessment Reduction Plans help identify phosphorus input reductions by
 **Future Stategic Actions**
 
 Most municipal facilities required to develop a NARP. s wastewater facilities continue to invest in nutrient removal technology, total phosphorus loads — and in some cases, total nitrogen loads — are expected to continue to decrease.
+
+# First Project Meeting
+
+## Frontend
+- I pushed for a couple of wireframes so we can get started with the layout of the dashboard and compare different navigation options.
+- The design files might have some useful styling information that can be used for the dashboard.
+- The project so far has 4 dashboards, but it is a tentative number and can be changed.
+
+## Data
+- A lot of the data in the report is statewide, but the dashboard might require us to focus by county, practices, and HUC.
+- There are a number of spreadsheets from different sources which should be normalized to a single database, and this format is already being worked on by Joan.
+
+## Data Manipulation
+- A number of scripts would be required for conversions such as latitude/longitude to HUC, etc.
+
+## Backend
+- There are a lot of similarities to the old Green Infrastructure project, so going through the codebase could be helpful.
+
+## Database
+- Normalizing the spreadsheets to a single database format is in progress, led by Joan.
+
+## Misc
+- Joan showed us a timeline of the project and the different phases that are planned.
+- Going to have a follow-up huddle with Laura to clarify some of the points and get started on the project.
