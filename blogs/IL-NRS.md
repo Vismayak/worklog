@@ -5,7 +5,7 @@ icon: display-code
 
 # Illinois NRS Dashboard
 
-## Meeting with Trevor
+## Meeting with Trevor (October 4th 2024)
 ### Overview
 - The project aims to visualize annual average loads for point sources in three categories: Major Municipal, Industrial, and Minor. 
 - The focus is initially on aggregated data, with a goal to display individual point sources later.
