@@ -12,6 +12,28 @@ Gatsby is a React-based open source framework for creating websites. I think the
 
 Follow the [tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/). 
 
+Key points from the tutorial:
+
+**Part 2** 
+- Gatsby automatically creates pages for React components that are the default export of files in the src/pages directory.
+
+- If a user tries to visit the URL for a page that doesn’t actually exist, Gatsby will use the src/pages/404.js page component to display an error instead.
+
+- Add a page title to your page. Gatsby lets you define a title and other document metadata with the Gatsby Head API. You have to export a component called Head from your page template to apply the metadata. Adding such metadata helps search engines like Google to better understand your site. For this tutorial you’ll only be adding titles to pages but you can also later add other metadata.
+
+- Encompass the repeated parts of your site in a layout component. You can create a layout component that wraps around your page components to encompass the repeated parts of your site. This makes it easier to maintain your site and ensures that all pages have a consistent look and feel.
+- Gatsby isn’t opinionated about what styling approach you want to use, but it works with CSS Modules by default.
+
+**Part 3**
+
+- In Gatsby terms, a plugin is a separate npm package that you install to add extra features to your site.
+
+To add a plugin to your site, you’ll use the following process:
+
+1. Install the plugin by running npm install or yarn add.
+2. Configure the plugin to your gatsby-config.js file.
+
+*The gatsby-config.js file is a special file that Gatsby recognizes automatically. It’s where you add plugins and other site configuration.*
 
 
 

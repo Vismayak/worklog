@@ -13,6 +13,15 @@ hidden: true
 - [**Illinois NRS Dashboard**](https://github.com/orgs/geostreams/projects/9)
 
 
+
+## October 5th
+
+**Geostreams 3**
+
+Successfully, connected local smartfarm to geostreams3, I am able to even visualize sensor data though there are small glitches like when I reload the page, the graphs disappear. The cause of the error was that the sensor serializer was returning the parameter as a list of lists as it was passing each stream's parameter as a list.
+
+![alt text](assets/images/worklog/image.png)
+
 ## October 4th
 
 **Illinois NRS**

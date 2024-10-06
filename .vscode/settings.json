@@ -1,5 +1,6 @@
 {
     "markdown.copyFiles.destination": {
-        "/blogs/**/*": "assets/images/${documentBaseName}/"
+        "/blogs/**/*": "assets/images/${documentBaseName}/",
+        "worklog.md": "assets/images/${documentBaseName}/"
     }
 }
