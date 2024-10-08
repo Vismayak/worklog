@@ -12,7 +12,9 @@ hidden: true
 
 ## GLTG 
 
-- Complete changes specified by Greg
+- Complete changes specified by Greg, add new parameter 'Yield' to the data and update the UI to reflect this change`
+- Update shapefile data  
+
 
 ## Geostreams3
 

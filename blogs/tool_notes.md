@@ -35,6 +35,9 @@ To add a plugin to your site, you’ll use the following process:
 
 *The gatsby-config.js file is a special file that Gatsby recognizes automatically. It’s where you add plugins and other site configuration.*
 
+Takeaways:
+- Using plugins saves you development time, since it’s faster to install and configure a plugin than it is to recreate the same functionality from scratch.
+- The general process for using a plugin is to install it, configure it in your gatsby-config.js file, and then use it in your site as needed.
 
 
 ## [uv](https://github.com/astral-sh/uv) 

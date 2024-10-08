@@ -14,6 +14,35 @@ hidden: true
 
 
 
+## October 8th
+
+**GLTG**
+
+Updated the watershed scripts and updated the watersheds in the current map. Task took slightly longer than expected as there were small bugs that werent there before
+
+Rerouted - /summary is used for trend dashboard, /nutrient-trends is now used for the trend dashboard and removed the use of hashtag from the url
+
+Made notes on the GLTG dashboard wireframes
+
+**Illinois NRS**
+
+- Get started with making charts and a layout for the website 
+
+
+## October 7th 
+
+**IBM HPHC**
+Run the code Amal provided on the NCSA GPU VM
+
+**GLTG**
+
+Met with Alejandra to discuss new updates to the watershed basin, she will upload some new shape files which means we will have to recreate a new watershed layer for the map.
+
+## October 6th
+
+**Illinois NRS**
+Ruled out Gatsby for the Illinois NRS project, as it is not a good fit for the project. The project's future goals are to have a dynamic dashboard that can be updated with new data and Gatsby is more suited for static sites. There could be a workaround by using Gatsby for the static pages and then using React for the dynamic pages but it would be a lot of work.
+
 ## October 5th
 
 **Geostreams 3**
