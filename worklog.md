@@ -26,7 +26,11 @@ Made notes on the GLTG dashboard wireframes
 
 **Illinois NRS**
 
-- Get started with making charts and a layout for the website 
+- Get started with making charts a layout for the website using MUI
+
+**HPHC**
+
+- Rob fixed the taiga mount and I was able to uninstall the wrong version of torch and pytorch and install the correct version. Started a run of the GPU script
 
 
 ## October 7th 
