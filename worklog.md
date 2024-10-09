@@ -31,7 +31,8 @@ Made notes on the GLTG dashboard wireframes
 **HPHC**
 
 - Rob fixed the taiga mount and I was able to uninstall the wrong version of torch and pytorch and install the correct version. Started a run of the GPU script
-
+`python train_net.py --config-file configs/mask_rcnn_vitdet.py --num-gpus 1 --dataset iwp`
+![Results of first reduced run](assets/images/worklog/image-1.png)
 
 ## October 7th 
 
