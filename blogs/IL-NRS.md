@@ -8,6 +8,25 @@ hidden: true
 [Google Drive Link](https://drive.google.com/drive/u/0/folders/1bvuE5uNpSAmTLUHO_5O-dQbAwHixYaDl)
 
 
+
+## Clarifications
+
+- We require a distinction between the report (the part of the site with text, charts and infographics) and the dashboard. The report is static and should be completed as soon as possible, while the dashboard is interactive which requires more time. So the initial focus should be to quickly complete the reports (preferably by March 2025) and then focus on the dashboard.
+- The report has interactive charts and infographics but these are going to be constant. The dashboard can have interactive charts and infographics that can be updated with new data.
+- In case we have new data for a report, we should just a new page/tab for a new report.
+- To make sure, we are on the same page, we need a visual aid/mockup with the dashboard included, my approach to the page would differ depending on the mockup
+
+
+## Clarification with Illinois NRS treatment
+
+After our discussion, we looked over the wireframes and plans discussed in the meetings and some clarifications were needed.
+
+ - We require a distinction between the report and the dashboard. The report is static and should be completed as soon as possible, while the dashboard is interactive which requires more time. So the initial focus should be to quickly complete the reports (preferably by March 2025) and then focus on the dashboard.
+ - The report has interactive charts and infographics but these are going to be constant. The dashboard will have interactive charts and infographics that can be updated with new data.
+ - In case we have new data for a report, we should just a new page/tab for a new report.
+ - In order to make sure, we are on the same page, we need a visual aid/mockup with dashboard, my approach to the website would differ depending on the mockup. Like how I would link the dashboard
+
+
 # Illinois NRS Dashboard
 
 ## Meeting with Trevor (October 4th 2024)

@@ -14,6 +14,21 @@ hidden: true
 
 
 
+## October 9th
+
+**GLTG**
+
+- Completed Jong's wireframe for home page 
+-  Deployed to production
+
+**Illinois NRS**
+
+- Created stacked bar chart with recharts and remaining layout
+- Created notes for next meeting to get clarification on report
+
+
+
+
 ## October 8th
 
 **GLTG**
