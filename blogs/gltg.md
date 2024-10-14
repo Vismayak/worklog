@@ -4,6 +4,20 @@ icon: display-code
 hidden: true
 ---
 
+## Meeting with Laura and Jong-  October 11, 2021
+
+Questions:
+
+Replacing the dashboard here with the thematic maps means we have to change the dashboard also? Else users will be confused.
+
+- Temporarily remove the conservation practices dashboard
+- Lisa suggested remove news section, Jong suggested a whats new section
+- They want to change intro backgroun to banner, text will go below this banner
+
+
+- November 20 to deploy GLTG homepage changes now
+
+
 ## Breaking down the new wirefreames for GLTG
 
 My initial thoughts are these designs are clunky and feel like a lot of work for a placeholder but onwards we go. Here are a breakdown of the tasks that will be needed to implement the new wireframes.

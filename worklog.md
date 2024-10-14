@@ -14,6 +14,22 @@ hidden: true
 
 
 
+## October 10th
+
+**GLTG**
+- Write script to add yield to the station data json
+
+**IBM HPHC**
+
+- Researched on infrastructure of different companies to see how we can run code on a secure environment with a focus on gVisor
+- Created a blog post to document the research and the problems we are trying to solve
+- Created a roadmap for the project
+
+**Misc**
+- Going through past self-evaluation to discuss in the 1-1 meeting with Luigi
+- Fill up the 1-1 meeting docs
+
+
 ## October 9th
 
 **GLTG**
@@ -24,9 +40,8 @@ hidden: true
 **Illinois NRS**
 
 - Created stacked bar chart with recharts and remaining layout
+![Basic layout with stacked bar](assets/images/worklog/image-2.png)
 - Created notes for next meeting to get clarification on report
-
-
 
 
 ## October 8th

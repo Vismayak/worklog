@@ -8,17 +8,14 @@ hidden: true
 **A list of todo tasks divided by projects**
 
 ## HDC
-- Run the code Amal provided on the NCSA GPU VM
+- Research and document infrastructure proposals for running ML on Kubernetes through Clowder
 
 ## GLTG 
 
-- Complete changes specified by Greg, add new parameter 'Yield' to the data and update the UI to reflect this change`
-- Update shapefile data  
+- Refine the yield graph, currently the Yaxis is having troubles displaying value cos of the low values
 
 
 ## Geostreams3
-
-- Start connecting to the smartfarm dashboard and see the progress I have so far and what is missing
 
 ## Misc
 - Look into:

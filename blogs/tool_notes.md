@@ -5,9 +5,44 @@ icon: display-code
 
 # Tool Notes
 
+## [gVisor](https://gvisor.dev/)
+
+What does it do?
+
+gVisor provides a virtualized environment in order to sandbox containers. The system interfaces normally implemented by the host kernel are moved into a distinct, per-sandbox application kernel in order to minimize the risk of a container escape exploit.
+
+### Approach
+
+Previous approaches to isolation:
+
+- Machine-level virtualization: This is the most secure form of isolation, but it is also the most resource-intensive. Each VM has its own kernel and is isolated from the host machine. This is the most secure form of isolation but it is also the most resource-intensive and slowest
+
+- Rule-based isolation: This is a less resource-intensive approach. It uses rules to filter system calls. This is less secure than machine-level virtualization because it is difficult to define rules for arbitrary applications.
+
+gVisor intercepts application system calls and acts as the guest kernel, without the need for translation through virtualized hardware. However, this comes at the price of reduced application compatibility and higher per-system call overhead.
+
+**Different components of gVisor**
+
+- Sentry: This is the part of gVisor that intercepts system calls and emulates the Linux kernel. It is responsible for handling system calls and managing the application's memory.
+
+- Gofer: This is the part of gVisor that manages file system access. It is responsible for translating file system operations into host kernel operations.
+
+
+**runsc vs runc**
+
+- runc is the default container runtime for Docker and Kubernetes. It is a lightweight, portable container runtime that is designed to be compatible with the Open Container Initiative (OCI) specification.
+
+- runsc is an executable that allows you to run sandboxed containers. It acts as the interface between container runtimes like Docker or Kubernetes and a sandbox environment. 
+
+
+
+
+
+
+
+
 
 ## [Gatsby](https://www.gatsbyjs.com/)
-
 Gatsby is a React-based open source framework for creating websites. I think there is an use case for the Illinos NRS project because it is a static site generator with options to pull data from markdon and use something called MDX. 
 
 Follow the [tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/). 

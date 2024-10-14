@@ -24,6 +24,7 @@ To address the issues with security, I looked into the [practices of Colab](http
 In Google colab, the notebook code itself executes within a secure container running on the VM, isolated from the host machine as well as other users‘ containers. Google achieves this using gVisor, an open-source container runtime that implements an additional kernel layer between the container and host OS.
 
 **[gVisor](https://gvisor.dev/)**
+
 ![What gVisor does?](assets/images/IBM-HDC/image-5.png)
 
 Key points:
@@ -40,14 +41,15 @@ Before gVisor, I read about seccomp, which allows us to filter system calls. But
 
 gVisor may be thought of as either a merged guest kernel and VMM, or as seccomp on steroids. This architecture allows it to provide a flexible resource footprint (i.e. one based on threads and memory mappings, not fixed guest physical resources) while also lowering the fixed costs of virtualization.
 
+## Code Analysis
+
+For python code, we can use [Bandit](https://bandit.readthedocs.io/en/latest/) to check for security issues. Bandit is a tool designed to find common security issues in Python code.
+
 What to research?
 
 How do we integrate gVisor with Clowder? Do we only run extractor containers with gVisor?
 
 ## Scalability
-
-
-
 
 ## Proposed Roadmap
 
@@ -57,12 +59,14 @@ Our roadmap to run a PDG finetuning and inference on Clowder will have the follo
 
 - We develop extractors with gvisor, once this is done, users can pass config python files through Clowder and run the extractors on the cluster.
 
-- Creating an online file editor options include [Codeium](https://github.com/Exafunction/codeium-react-code-editor), [react-simple-code-editor](https://github.com/react-simple-code-editor/react-simple-code-editor), or the most popular [react-monaco-editor](https://github.com/react-monaco-editor/react-monaco-editor). Monaco editor is used in VScode. The user can edit the code, save the file and submit to the extractor.
-
+- Creating an online file editor options include [Codeium](https://github.com/Exafunction/codeium-react-code-editor), [react-simple-code-editor](https://github.com/react-simple-code-editor/react-simple-code-editor), or the most popular [react-monaco-editor](https://github.com/react-monaco-editor/react-monaco-editor). Monaco editor is used in VScode. The user can edit the code, save the file and submit to the extractor. Also look into this [post](https://betterprogramming.pub/embedding-a-monaco-editor-inside-react-app-37083cf829e9)
 
 ## Problems we need to think about
 
 - What happens if two users edit the same file at the same time?
+- How to handle network access from extractors? Prevent downloading file fron the extractors?
+- Restricting access to the isolating environment
+- 
 
 ## KubeRay Experiments
 
