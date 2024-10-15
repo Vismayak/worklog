@@ -121,7 +121,10 @@ Give some technical details for those who are proficient in the field. Present i
 - **Saying "I Don’t Know"**  
   It's okay to admit if you don't know the answer. Deliver this with confidence, and avoid confusing "I don’t know" with "it is not known" unless you're sure. Follow up with the questioner later to learn more if possible.
 
-Also read [How to give a technical presentation](https://homes.cs.washington.edu/~mernst/advice/giving-talk.html)
+Also read:
+- [Speaker Cheat Sheet](https://www.yegor256.com/2018/12/25/speaker-cheat-sheet.html) - Highly recommend this.
+- [How to give a technical presentation](https://homes.cs.washington.edu/~mernst/advice/giving-talk.html)
+- [Nice Blog Post](https://www.cesarsotovalero.net/blog/how-to-give-a-great-technical-presentation.html)
 
 ## [How to Read a Paper](http://ccr.sigcomm.org/online/files/p83-keshavA.pdf)
 
