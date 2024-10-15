@@ -89,4 +89,3 @@ Server-Side Rendering (SSR) and Client-Side Rendering (CSR) are two approaches f
 | **SEO**               | Challenging (requires workarounds)          | Better (full HTML available for crawlers)  |
 | **Server Load**       | Lower (serves static assets and APIs)       | Higher (renders HTML for each request)     |
 | **Complexity**        | Simpler (no server-side rendering logic)    | More complex (requires handling on server) |
-\

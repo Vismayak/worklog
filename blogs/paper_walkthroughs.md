@@ -9,8 +9,119 @@ icon: display-code
 
 In my work, there is a lot of communication with stakeholders and peers, where I walk them through my work. To improve my presentations, I read this paper to get some guidance even if the paper is about presenting papers. I will jot down the key points which pertain to my needs.
 
+### What to say and how to say it?
+
+While selecting the material to present, the author suggests keep the following in mind:
+
+- **Commuicate the Key Ideas**
+
+    New results = few key ideas + application of standard tools and techniques. Emphasize the key ideas and not the details.
+
+- **Dont get bogged down in details**
+
+    Dont alienate the audience, launching right into the technical details. Start with a high-level overview and then delve into the details. Motivate the audience to listen to the details.
+
+- **Structure your talk**
+
+    The presentation should be broken into several distinct parts, each with it's own objectives and style. The audience should be steered gently from one part to the next.
+
+- **Use a Top-down Approach**
+
+    Template for talk consists of 4 parts:
+    1. **Introduction**: General overview of the presentation
+    2. **The Body**: Detailed explanation but abstract.
+    3. **The Technicalities**: Detailed explanation of the technical details.
+    4. **Conclusion**: Summary of the results and future work.
+
+    This template needs to be modified specifically points 2 and 3 based on the subject matter. For example, very technically complex presentations may require more than one pass in the body.
 
 
+### Breaking down the parts
+
+- **Introduction**
+
+    The most important part. It sets the tone and a lot of snap decisions are made based on the introduction. 
+    
+    - **Define the problem** - Take time to explain the problem and why it is important. Else the audience will not be interested or understand the rest of the talk.
+
+    - **Motivate the Audience** - Explain why the problem is interesting. *Throw in a little philosophy if necessary*, how can it fit into the larger picture. Other questions:
+        - What are its applications?
+        What makes the problem nontrivial
+    These questions can then be revisited in the conclustion to see how we address them
+
+    - **Introduce Terminology**- Keep to minimum but it will be impossible to completely avoid.
+
+    - **Discuss Earlier Work** 
+
+    - **Provide a Road-map** - Give the audience a brief guide to the rest of the talk as the last paragraph of the introduction. *But don’t make it a dry litany of dull generalizations (“first I will present the introduction, then summarize earlier work, then present the main body, and end with the conclusion”). Instead, give a short preview of what will be in each section. This part of the talk can be eliminated for very short conference presentations.*
+
+- **The Body**
+
+    - **Abstract the Major Results** - Do not get too technical, keep it as abstract and describe the key results.
+
+    - **Explain the significance of the results** - Why are the results important? How do they fit into the larger picture?
+
+**Getting Technical**
+
+Give some technical details for those who are proficient in the field. Present it carefully, be succint nad clear. Aim for understanding over content. 
+
+**The Conclusion**
+
+**Hindsigh is clearer that foresight** - Present the observations that would have been confusing to present till now.  Refer to previous info and make a coherent synopsis.
+
+**Give open problems** - Mention shortcomings and open problems. This is a good way to show that you are aware of the limitations of your work. 
+
+- **Indicate end of talk** - LOL (Seriously, this is what the paper says). Say Thank you, are there any questions and then end the talk. 
+
+###Z Getting Through to the Audience
+
+- **Use Repetition**  
+  Oral presentations should follow the pattern:  
+  - Introduction: Tell them what you're going to tell them.  
+  - Body/Technicalities: Tell them.  
+  - Conclusion: Tell them what you told them.  
+  Repetition helps clarify misunderstandings by rephrasing information in different ways.
+
+- **Remind, Don’t Assume**  
+  Briefly remind the audience of "standard" results in your field, even if they are widely known. Phrasing it as a reminder, allows those unfamiliar to learn without feeling embarrassed and those familiar to tune out if needed.
+
+- **Don’t Over-run**  
+  Avoid exceeding the allotted time. Plan to finish 5 minutes early to leave time for questions. Quality tends to decrease as the talk over-runs. Rehearse to ensure your talk fits within the given time. If short on time, cut out the technical details.
+
+- **Maintain Eye Contact**  
+  Spread your attention throughout the audience, and glance at the session chair periodically for time cues.
+
+- **Control Your Voice**  
+  Speak clearly, at an appropriate volume, and avoid monotony. Avoid filler words and hype.
+
+- **Control Your Motion**  
+  Project energy with natural gestures. Avoid being rooted in one spot or excessive movement, and be mindful of your position relative to the projector screen or dais.
+
+- **Take Care with Your Appearance**  
+  Dress appropriately for the occasion. For job talks, formal attire is recommended. For colloquia or conferences, casual attire is acceptable.
+
+- **Minimize Language Difficulties**  
+  If speaking in a non-native language, focus on clear delivery. Have a native speaker review your slides. Avoid reading from a prepared text.
+
+- **Try Not to Get Anxious**  
+  Preparation and practice reduce anxiety. Ignore distracting reactions from the audience. If you feel panicked, pause, breathe, and then continue. Mistakes in early talks are not career-ending.
+
+## Handling Questions at the End of a Presentation
+
+- **Three Types of Questions**
+  1. **Genuine Requests for Knowledge**  
+     These are straightforward and can be handled easily with adequate preparation.
+  
+  2. **Selfish Questions**  
+     These are designed to bring attention to the questioner. Take a few seconds to craft a thoughtful reply that subtly compliments them.
+
+  3. **Malicious Questions**  
+     These aim to undermine you, possibly as a test of handling criticism or out of insecurity. Expect attacks on your topic selection, proofs, or references. Stay polite, avoid prolonged exchanges, and offer to discuss offline if needed.
+
+- **Saying "I Don’t Know"**  
+  It's okay to admit if you don't know the answer. Deliver this with confidence, and avoid confusing "I don’t know" with "it is not known" unless you're sure. Follow up with the questioner later to learn more if possible.
+
+Also read [How to give a technical presentation](https://homes.cs.washington.edu/~mernst/advice/giving-talk.html)
 
 ## [How to Read a Paper](http://ccr.sigcomm.org/online/files/p83-keshavA.pdf)
 
