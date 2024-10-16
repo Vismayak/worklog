@@ -5,6 +5,13 @@ icon: display-code
 
 # Tool Notes
 
+## [RestrictedPython](https://restrictedpython.readthedocs.io/en/latest/)
+
+RestrictedPython is a tool that allows you to execute Python code in a restricted environment. It is useful for running untrusted code, such as code submitted by users in a web application.
+
+RestrictedPython generally disallows calls to any library that is not explicit whitelisted. 
+
+
 ## [gVisor](https://gvisor.dev/)
 
 What does it do?

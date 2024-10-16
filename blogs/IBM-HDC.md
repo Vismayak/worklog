@@ -5,6 +5,39 @@ icon: display-code
 
 # IBM HDC
 
+
+## Machine Learning Pipeline Deployment on Clowder
+
+Last week, I was able to run a PDG ML pipeline that one of the scientists, Amal helped me run through. The pipeline utilizes ViTs through Detectron2 to train a model to detect IWP (Ice Wedge Polygons) in satellite images. 
+
+**Quick Intro to Ice Wedge Polygons (IWP)**
+![Ice Wedge Polygons](assets/images/IBM-HDC/image-6.png)
+
+Ice wedges are one of the three main features of the Arctic’s land surface. Permafrost, ground that remains below 0˚C for at least two consecutive summers, lies under a thinner layer of thawing and refreezing soil, called the active layer. When permafrost cracks during cold winter days, snowmelt and runoff water seep into the empty space. These eventually freeze and create a wedge-shaped spear of ice that extends vertically down into the permafrost.
+
+Ice wedges actively re-shape the tundra. When they freeze, they grow and expand outward, pushing against the bordering permafrost and active layer. With nowhere else to go, permafrost and soil push upwards, and ridges form on the surface of the tundra. The ridges interlock and form distinct shapes, referred to as ice-wedge polygons. 
+
+
+**Back to the pipeline**
+
+While ensuring scalabilty of the pipeline on Cloudm the main purpose of our thrust is to  *simplify a scientific computing application developer’s process of moving ML training/inference pipelines across computational resources via the hybrid cloud*.
+
+Our current approach to pipelines have not taken into account, a scientist's need to modify configurations and code during the training process. This is a common practice in ML where the user may want to change hyperparameters, model architecture, or other configurations during training.
+
+![Example of a config file](assets/images/IBM-HDC/image-7.png)
+
+To give users the power of modifying configurations and code during the training process, we need to build a system that can handle this. I have come across a few approaches with their pros and cons:
+
+- **Approach 1**: Direct code injection into the container. This is the most straightforward approach. The extractor can load the file passed by the user and run it in a container but even this is risky. Container escape is a real possibility (I am no expert but here is a useful [link](https://www.panoptica.app/research/7-ways-to-escape-a-container) in some of the methods)
+
+- **Approach 2**: Running the code in a sandbox environment using a tool like gVisor. This is a more secure approach. gVisor is an open-source container runtime that implements an additional kernel layer between the container and host OS. This way, even if the container is compromised, it cannot affect the host machine. However, the shortcomings here are that we don't have control over the code that is being run. It might not affect our system but could be code that is wasting resources for unapproved purposes.
+
+- **Approach 3**: Using a JSON file to pass configurations. This is the most secure approach. The user can pass a JSON file with configurations and the extractor can read this file and run the model. This way, the user cannot run arbitrary code. However, this approach is not flexible. The number of hyperparameters that can be passed is a very extensive list and to have our extactor code to be able to handle all of them is a challenge.
+
+- **Approach 4**: The code can be restricted to use only certain libraries. This is a more secure approach. The user can only use the libraries that are whitelisted. This way, the user cannot run arbitrary code. They are limited by the whitelist libraries but in most cases, this is enough. The user can still change hyperparameters and other configurations.
+
+
+
 ## Infrastucture building for running ML on Kubernetes through Clowder [WIP]
 
 ![Current Clowder v2 architecture](assets/images/IBM-HDC/image-4.png)

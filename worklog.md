@@ -14,6 +14,18 @@ hidden: true
 
 
 
+
+## October 14th
+**IBM HPHC**
+- Researched on gVisor and Restricted Python
+
+**Misc**
+
+Read papers:
+ - How to Read a Paper
+ - How to Present a Paper in Theoretical Computer Science
+
+
 ## October 10th
 
 **GLTG**
