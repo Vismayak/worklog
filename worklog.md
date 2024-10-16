@@ -18,6 +18,10 @@ hidden: true
 ## October 14th
 **IBM HPHC**
 - Researched on gVisor and Restricted Python
+- Created JSON Clowder Editor but save is left
+
+**GLTG**
+- Completed Jong's wireframe for home page design
 
 **Misc**
 
