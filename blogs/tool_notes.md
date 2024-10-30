@@ -5,6 +5,155 @@ icon: display-code
 
 # Tool Notes
 
+## [Next.js](https://nextjs.org/)
+
+I heard a lot about Next.js and thought my new project would be a good learning opportunity. So let's see what it is all about.
+
+"Next.js is a React framework for building full-stack web applications. You use React Components to build user interfaces, and Next.js for additional features and optimizations."
+
+Next.js basically optimizes our code and a lot of it is under the hood. The main features they mention are:
+- Routing
+- Rendering
+- Data Fetching
+- Styling
+- Optimizations
+
+Lets look a little deeper into each of these features.
+
+### Rendering
+
+Rendering converts the code you write into user interfaces. React and Next.js allow you to create hybrid web applications where parts of your code can be rendered on the server or the client. 
+
+*Rendering Environments*: There are two environments where web applications can be rendered: the client and the server.
+
+The client environment is the browser. The server refers to the computer in a data center that stores your application code, receives requests from a client, and sends back an appropriate response.
+
+*Request Response Cycle*: The request-response cycle is the process of sending a request from a client to a server and receiving a response:
+
+1. User Action
+2. HTTP Request
+3. Server Action
+4. HTTP Response
+5. Client
+6. User Action
+
+![Network Boundary](assets/images/tool_notes/image-2.png)
+
+*Benefits of Server Rendering:*
+1. Faster Data Fetching - Data fetching happens closer to the data source, reducing client requests and improving performance
+
+2. Enhanced Security - Sensitive data and logic stay on the server, protecting tokens and API keys
+
+3. Efficient Caching - Rendered results can be cached and reused across requests and users, improving performance and reducing costs
+
+4. Better Performance - Reduces client-side JavaScript by moving non-interactive UI elements to server, helping users with slower devices/internet
+
+5. Faster Initial Load - Generates HTML on server for immediate viewing, without waiting for client-side JavaScript processing
+
+6. SEO & Social Sharing - Pre-rendered HTML improves search engine indexing and social media preview capabilities
+
+7. Streaming Capability - Content can be split and streamed in chunks, allowing users to see parts of the page before complete rendering
+
+**By default, Next.js uses Server Components. This allows you to automatically implement server rendering with no additional configuration, and you can opt into using Client Components when needed,**
+
+![How are Server Components rendered?](assets/images/tool_notes/image-3.png)
+
+3 subsets of server rendering:
+
+1. Static Rendering (Default)
+
+- Pages are rendered at build time
+
+- Results are cached and can be served from CDN
+
+- Ideal for content that's the same for all users (blogs, product pages)
+
+- Best performance but least dynamic
+
+2. Dynamic Rendering
+
+- Pages are rendered at request time for each user
+
+- Suitable for personalized content (user-specific data, URL parameters)
+
+- Can mix cached and uncached data
+
+- Automatically triggered by using dynamic APIs like:
+
+  - cookies, headers, searchParams
+
+  - connection, draftMode
+
+  - unstable_noStore, unstable_after
+
+3. Streaming
+
+- Progressively renders UI from server in chunks
+
+- Shows parts of the page immediately while rest loads
+
+- Built into Next.js App Router
+
+- Implemented using loading.js and React Suspense
+
+- Balances performance with dynamic content needs
+
+Key Point: Next.js automatically chooses the appropriate rendering strategy based on the APIs and features used in a route. Developers focus on data caching decisions rather than explicitly choosing rendering methods.
+
+*Client Side Rendering Benefits*
+
+- Interactivity: Client Components can use state, effects, and event listeners, meaning they can provide immediate feedback to the user and update the UI.
+
+- Browser APIs:  Client Components have access to browser APIs, like geolocation or localStorage.
+
+*How to use Client Components*
+
+To use Client Components, you can add the React "use client" directive at the top of a file, above your imports.
+
+"use client" is used to declare a boundary between a Server and Client Component modules. This means that by defining a "use client" in a file, all other modules imported into it, including child components, are considered part of the client bundle.
+
+```tsx
+'use client'
+ 
+import { useState } from 'react'
+ 
+export default function Counter() {
+  const [count, setCount] = useState(0)
+ 
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
+    </div>
+  )
+}
+```
+
+*When to use Server and Client Components?*
+![Server vs Client Components](assets/images/tool_notes/image-4.png)
+
+*server-only*
+
+The 'server-only' package is a simple Next.js utility that helps prevent server code from being accidentally used in client components. When you import 'server-only', it throws a build-time error if that module is imported from a client component.
+
+```tsx
+// database.ts
+import 'server-only';
+
+export async function getData() {
+  // Database operations here
+}
+
+// If this file gets imported by a client component,
+// you'll get a build error:
+// "You're importing a component that needs server-only features..."
+```
+It's particularly useful when you have utilities or functions that should never run on the client (like direct database access). Would you like me to explain more about when you might want to use this?
+
+### Routing
+
+NextJS moved on from a page router to a new App router. 
+
 ## [RestrictedPython](https://restrictedpython.readthedocs.io/en/latest/)
 
 RestrictedPython is a tool that allows you to execute Python code in a restricted environment. It is useful for running untrusted code, such as code submitted by users in a web application.

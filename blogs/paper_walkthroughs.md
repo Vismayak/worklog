@@ -73,7 +73,7 @@ Give some technical details for those who are proficient in the field. Present i
 
 - **Indicate end of talk** - LOL (Seriously, this is what the paper says). Say Thank you, are there any questions and then end the talk. 
 
-###Z Getting Through to the Audience
+### Getting Through to the Audience
 
 - **Use Repetition**  
   Oral presentations should follow the pattern:  

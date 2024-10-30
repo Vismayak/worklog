@@ -13,9 +13,25 @@ hidden: true
 - [**Illinois NRS Dashboard**](https://github.com/orgs/geostreams/projects/9)
 
 
+## October 19th 
+
+**IBM HPHC**
+- Co-wrote end of the year report
+- Pair programming seission with Chen for Clowder JSON Visualizer
+
+**IL NRS**
+- Received mail from Joan on email about where to get the data for Charts and different components
+
+## October 17th
+**IBM HPHC**
+- Created draft extractor for PDG 
+- Presented work in PDG meeting and IBM Meeting
+
+**IL NRS**
+- Led meeting on how to design the meeting
 
 
-## October 14th
+## October 15th - 16th
 **IBM HPHC**
 - Researched on gVisor and Restricted Python
 - Created JSON Clowder Editor but save is left

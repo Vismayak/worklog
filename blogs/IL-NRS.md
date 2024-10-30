@@ -7,6 +7,9 @@ hidden: true
 
 [Google Drive Link](https://drive.google.com/drive/u/0/folders/1bvuE5uNpSAmTLUHO_5O-dQbAwHixYaDl)
 
+## IL-NRS meetings
+
+They said the text in the report is not goign to change but the graphs will every year. I mentioned that the dashboard is going to be interactive and that we will have to make sure that the data is updated regularly. ¡
 
 
 ## Clarifications for next meeting
@@ -15,7 +18,7 @@ hidden: true
 - The report has interactive charts and infographics but these are going to be constant. The dashboard can have interactive charts and infographics that can be updated with new data.
 - In case we have new data for a report, we should just a new page/tab for a new report.
 - To make sure, we are on the same page, we need a visual aid/mockup with the dashboard included, my approach to the page would differ depending on the mockup
-- Come up with a data management plan for the project, this should include how we are going to handle the data, how we are going to update the data, and how we are going to handle the data in the future.
+- Come up with a data managementou plan for the project, this should include how we are going to handle the data, how we are going to update the data, and how we are going to handle the data in the future.
 
 # Illinois NRS Dashboard
 
